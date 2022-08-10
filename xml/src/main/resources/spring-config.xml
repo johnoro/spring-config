@@ -4,9 +4,9 @@
         xsi:schemaLocation="http://www.springframework.org/schema/beans
         http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="address" class="com.johnoro.xml.model.Address" />
+    <bean id="address" class="com.johnoro.xml.model.Address" scope="prototype" />
 
-    <bean id="phone" class="com.johnoro.xml.model.Phone" />
+    <bean id="phone" class="com.johnoro.xml.model.Phone" scope="prototype" />
 
-    <bean id="student" class="com.johnoro.xml.model.Student" />
+    <bean id="student" class="com.johnoro.xml.model.Student" scope="prototype" />
 </beans>

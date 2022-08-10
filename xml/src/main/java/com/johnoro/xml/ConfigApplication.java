@@ -32,5 +32,16 @@ public class ConfigApplication {
         student.setAddress(address);
         student.setPhones(List.of(phone));
         System.out.println(student);
+
+        Phone phone1 = applicationContext.getBean(Phone.class);
+        phone1.setMobile("4444");
+
+        Student student1 = applicationContext.getBean(Student.class);
+        student1.setId(1);
+        student1.setName("Joe");
+        student1.setAddress(address);
+        student1.setPhones(List.of(phone1));
+        System.out.println(student1);
+        System.out.println(student);
     }
 }
